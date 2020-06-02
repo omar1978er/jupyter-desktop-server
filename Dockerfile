@@ -14,7 +14,7 @@ RUN wget -nc https://dl.winehq.org/wine-builds/winehq.key
 RUN apt-key add winehq.key
 RUN apt-add-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ xenial main'
 RUN apt update && apt-get install -y --install-recommends winehq-stable \
-    && apt-get install dbus-x11firefox xfce4 xfce4-panel xfce4-session xfce4-settings xorg xubuntu-icon-theme \
+    && apt-get install dbus-x11 firefox xfce4 xfce4-panel xfce4-session xfce4-settings xorg xubuntu-icon-theme \
     && apt-get clean
 
 
