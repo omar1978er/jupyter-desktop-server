@@ -1,8 +1,7 @@
 #! /usr/bin/env bash
  
-#Start the RobotLab app
-wine /opt/Apps/RobotLab/RobotLab.exe
+#Start the Neural app
+wine /home/jovyan/Apps/Neural/neural.exe
  
 #Keep the container running...
 tail -f /dev/null
-
