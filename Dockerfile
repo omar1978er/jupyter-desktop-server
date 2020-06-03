@@ -18,7 +18,7 @@ RUN apt update && apt-get install -y --install-recommends winehq-stable \
 
 # Maybe better - for the apt.packages:
 COPY apt.txt apt.txt 
-RUN xargs apt-get install < apt.txt \
+RUN xargs apt-get install -y < apt.txt \
     && apt-get clean
 
 USER ${NB_USER}
