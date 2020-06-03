@@ -33,4 +33,4 @@ RUN chmod +x Desktop/neural.sh
 
 USER ${NB_USER}
 
-RUN conda env update --file environment.yml
+RUN conda env update --name notebook --file environment.yml
