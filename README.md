@@ -7,6 +7,8 @@ JupyterLab:
 
 ![](JupyterLab_robotLab.png)
 
+The display is quite a high resolution to start with; this can be fixed during a user session from the desktop `Applications > Settings > Display` menu. Presumably, there is a way of setting a config file to constrain this at boot time?
+
 Jupyter Notebook:
 
 ![](Jupyter_Notebook_robotlab.png)
