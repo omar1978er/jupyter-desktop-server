@@ -3,6 +3,14 @@
 
 Run XFCE (or other desktop environments) on a JupyterHub; demo includes running a Windows desktop application under Wine.
 
+JupyterLab:
+
+![](JupyterLab_robotLab.png)
+
+Jupyter Notebook:
+
+![](Jupyter_Notebook_robotlab.png)
+
 At the moment, the demo requires:
 
 - you grab the desktop URL;
