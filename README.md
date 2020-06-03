@@ -1,4 +1,4 @@
-# Jupyter Desktop Server
+# Jupyter Desktop Server + Wine
 
 Launch into desktop: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ouseful-demos/jupyter-desktop-server/robotlab?urlpath=desktop)
 
