@@ -32,5 +32,7 @@ RUN chmod +x Desktop/robotlab.sh
 RUN chmod +x Desktop/neural.sh
 
 USER ${NB_USER}
-
-RUN conda env update --name notebook --file environment.yml
+RUN conda env update --name base --file environment.yml
+## conda info --envs
+#RUN conda env update --name notebook --file environment.yml
+#RUN conda activate myenv
