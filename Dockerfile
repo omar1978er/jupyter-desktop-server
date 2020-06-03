@@ -27,8 +27,10 @@ COPY Desktop/ Desktop/
 COPY Apps/ Apps/
 COPY environment.yml  environment.yml
 
+USER root
 RUN chmod +x Desktop/robotlab.sh
 RUN chmod +x Desktop/neural.sh
 
+USER ${NB_USER}
 
 RUN conda env update --file environment.yml
