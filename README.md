@@ -1,5 +1,11 @@
 # Jupyter Desktop Server
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ouseful-demos/jupyter-desktop-server/robotlab?urlpath=desktop)
+
+Launch into desktop: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ouseful-demos/jupyter-desktop-server/robotlab?urlpath=desktop)
+
+Launch into JupyterLab: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ouseful-demos/jupyter-desktop-server/robotlab?urlpath=lab)
+
+Launch into notebook: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ouseful-demos/jupyter-desktop-server/robotlab)
+
 
 Run XFCE (or other desktop environments) on a JupyterHub; demo includes running a Windows desktop application under Wine.
 
