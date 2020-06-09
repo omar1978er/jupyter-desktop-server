@@ -8,18 +8,12 @@ RUN apt-get update && apt-get install -y software-properties-common
 
 RUN dpkg --add-architecture i386
 
-ENV WINEDLLOVERRIDES="mscoree,mshtml="
+#  Install BlueJ
+RUN apt-get install -y openjdk-11-jdk && apt-get clean
+RUN wget http://www.bluej.org/download/files/BlueJ-linux-422.deb && \
+	dpkg -i BlueJ-linux-422.deb; apt-get install -f -y && \
+	rm -f *.deb
 
-RUN wget -nc https://dl.winehq.org/wine-builds/winehq.key
-RUN apt-key add winehq.key
-RUN apt-add-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ xenial main'
-RUN apt update && apt-get install -y --install-recommends winehq-stable \
-    && apt-get clean
-
-# Maybe better - for the apt.packages:
-COPY apt.txt apt.txt 
-RUN xargs apt-get install -y < apt.txt \
-    && apt-get clean
 
 USER ${NB_USER}
 
@@ -27,7 +21,6 @@ COPY setup.py setup.py
 COPY MANIFEST.in MANIFEST.in
 COPY jupyter_desktop/ jupyter_desktop/
 COPY Desktop/ Desktop/
-COPY Apps/ Apps/
 COPY environment.yml  environment.yml
 
 USER root
