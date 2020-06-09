@@ -29,6 +29,6 @@ RUN conda env update --name base --file environment.yml
 #RUN conda env update --name notebook --file environment.yml
 #RUN conda activate myenv
 
-RUN pip install jupyterlab_iframe
-RUN jupyter labextension install jupyterlab_iframe
-RUN jupyter serverextension enable --py jupyterlab_iframe
+#RUN pip install jupyterlab_iframe
+#RUN jupyter labextension install jupyterlab_iframe
+#RUN jupyter serverextension enable --py jupyterlab_iframe
