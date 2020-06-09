@@ -23,7 +23,7 @@ RUN wget http://www.bluej.org/download/files/BlueJ-linux-422.deb && \
 # Install IJava
 # via https://github.com/ntartania/INF1563_Notebooks/blob/master/Dockerfile
 # Download the kernel release
-RUN curl -L https://github.com/SpencerPark/IJava/releases/download/v1.3.0/ijava-1.3.0.zip > ijava-kernel.zip
+RUN wget-O ijava-kernel.zip https://github.com/SpencerPark/IJava/releases/download/v1.3.0/ijava-1.3.0.zip 
 
 # Unpack and install the kernel
 RUN unzip ijava-kernel.zip -d ijava-kernel \
