@@ -5,6 +5,11 @@ USER root
 #Required to add repo
 RUN apt-get update && apt-get install -y software-properties-common
 
+# Maybe better - for the apt.packages:
+COPY apt.txt apt.txt 
+RUN xargs apt-get install -y < apt.txt \
+    && apt-get clean
+
 
 RUN dpkg --add-architecture i386
 
