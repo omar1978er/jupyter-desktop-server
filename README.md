@@ -16,4 +16,4 @@ The main contribution from this repo is the demo Dockerfile.
 ## To Do
 
 - fix desktop icon
-- add [IJava](https://github.com/SpencerPark/IJava) kernel or other Java kernel to allow Java execution in notebook
+- add [IJava](https://github.com/SpencerPark/IJava) kernel or other Java kernel to allow Java execution in notebook; example [here](https://github.com/ntartania/INF1563_Notebooks/blob/master/Dockerfile) with some teaching notebooks maybe along the way in that repo?
