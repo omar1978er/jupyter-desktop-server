@@ -20,6 +20,17 @@ RUN wget http://www.bluej.org/download/files/BlueJ-linux-422.deb && \
 	rm -f *.deb
 
 
+# Install IJava
+# via https://github.com/ntartania/INF1563_Notebooks/blob/master/Dockerfile
+# Download the kernel release
+RUN curl -L https://github.com/SpencerPark/IJava/releases/download/v1.3.0/ijava-1.3.0.zip > ijava-kernel.zip
+
+# Unpack and install the kernel
+RUN unzip ijava-kernel.zip -d ijava-kernel \
+  && cd ijava-kernel \
+  && python3 install.py --sys-prefix
+
+
 USER ${NB_USER}
 
 COPY setup.py setup.py
