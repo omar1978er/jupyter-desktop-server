@@ -23,10 +23,6 @@ COPY jupyter_desktop/ jupyter_desktop/
 COPY Desktop/ Desktop/
 COPY environment.yml  environment.yml
 
-USER root
-RUN chmod +x Desktop/robotlab.sh
-RUN chmod +x Desktop/neural.sh
-
 USER ${NB_USER}
 RUN conda env update --name base --file environment.yml
 ## conda info --envs
