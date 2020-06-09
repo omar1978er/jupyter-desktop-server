@@ -9,7 +9,7 @@ RUN apt-get update && apt-get install -y software-properties-common
 RUN dpkg --add-architecture i386
 
 #  Install BlueJ
-RUN apt-get install -y openjdk-8-jdk && apt-get clean
+RUN apt-get install -y openjdk-11-jdk openjfx && apt-get clean
 RUN wget http://www.bluej.org/download/files/BlueJ-linux-422.deb && \
 	dpkg -i BlueJ-linux-422.deb; apt-get install -f -y && \
 	rm -f *.deb
