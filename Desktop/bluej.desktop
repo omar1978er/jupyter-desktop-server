@@ -4,6 +4,6 @@ Version=1.0
 Type=Application
 Terminal=false
 Icon=/home/jovtan/Apps/icons/bluej-icon-embossed-256.png
-Name=RobotLab
+Name=BlueJ
 Exec=bluej
 Comment=BlueJ launcher

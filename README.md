@@ -9,7 +9,7 @@ Launch into notebook: [![Binder](https://mybinder.org/badge_logo.svg)](https://m
 
 Run XFCE (or other desktop environments) on a JupyterHub; demo includes running BlueJ Java desktop IDE.
 
-
+![](.images/blueJ_demo.png)
 
 The main contribution from this repo is the demo Dockerfile.
 
