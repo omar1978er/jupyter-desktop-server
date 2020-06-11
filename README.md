@@ -9,6 +9,8 @@ Launch into notebook: [![Binder](https://mybinder.org/badge_logo.svg)](https://m
 
 Run XFCE (or other desktop environments) on a JupyterHub; demo includes running BlueJ Java desktop IDE.
 
+At the moment, the JupyterLab view is a bit clunky. You need to get the desktop URL and then paste it in as the URL for an IFrame widget in JupyterLab (look for the JupyterLab Iframe extension...)
+
 ![](.images/blueJ_demo.png)
 
 The main contribution from this repo is the demo Dockerfile.
